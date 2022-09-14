@@ -1,0 +1,31 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "shopping cart",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefic frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "data:import": "node backend/seederScript.js"
+
+  },
+  "author": "Hadiza Isa Abdullahi <hadeezah18@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  },
+
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+
+
+
+}
